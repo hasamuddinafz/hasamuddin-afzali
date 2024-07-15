@@ -40,7 +40,7 @@ const BlogPost = async ({ params }) => {
           <div className='post w-4/5'>
             <Image src={post.image} width={400} height={400} className="my-10 w-full" alt="Blog" />
             <h1 className='text-4xl poppins-bold mb-5'>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.description) }} />
+            {/* <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.description) }} /> */}
           </div>
           <div className='advertisment'>
             <h1>Ads</h1>
